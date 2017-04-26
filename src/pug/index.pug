@@ -1,0 +1,38 @@
+doctype html
+html(lang='')
+    head
+        meta(charset='utf-8')
+        meta(http-equiv='x-ua-compatible', content='ie=edge')
+        title Store Base
+        meta(name='description', content='')
+        meta(name='viewport', content='width=device-width, initial-scale=1')
+
+        link(rel='stylesheet', href='css/index.css')
+        style(type="text/css").
+            #preloader {
+                position: fixed;
+                z-index: 9999;
+                top:0;
+                left:0;
+                right:0;
+                bottom:0;
+                background: #fff;
+            }
+    body
+        #preloader
+        #wrapper
+            .container
+                ul.index-menu
+                    li
+                        a(href="main.html") Main
+                    li
+                        a(href="catalog.html") Catalog
+                    li
+                        a(href="catalog-filter.html") Catalog filter
+                    li
+                        a(href="catalog-item.html") Catalog item
+                    li
+                        a(href="catalog-second.html") Catalog second
+        script(src='js/vendor/jquery-3.1.0.min.js')
+        script(src='js/vendor/slick.min.js')
+        script(src='js/index.js')

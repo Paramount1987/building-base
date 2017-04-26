@@ -1,0 +1,113 @@
+//
+// Navs
+// --------------------------------------------------
+
+
+// Base class
+// --------------------------------------------------
+
+.nav {
+    margin-bottom: 0;
+    padding-left: 0; // Override default ul/ol
+    list-style: none;
+
+    > li {
+        position: relative;
+        display: block;
+
+        > a {
+            position: relative;
+            display: block;
+            &:hover,
+            &:focus {
+                text-decoration: none;
+            }
+        }
+
+        // Disabled state sets text to gray and nukes hover/tab effects
+        &.disabled > a {
+
+            &:hover,
+            &:focus {
+                text-decoration: none;
+                background-color: transparent;
+                cursor: default;
+            }
+        }
+    }
+
+    // Open dropdowns
+    .open > a {
+        &,
+        &:hover,
+        &:focus {
+
+        }
+    }
+}
+
+
+// Tabs
+// -------------------------
+
+// Give the tabs something to sit on
+.nav-tabs {
+    border-bottom: 1px solid $color-gray;
+    font-size: 0;
+    text-align: center;
+    > li {
+        display: inline-block;
+        vertical-align: top;
+        // Make the list-items overlay the bottom border
+        font-size: $font-size--root;
+        margin-bottom: -1px;
+
+
+        // Actual tabs (as links)
+        > a {
+            margin-right: 2px;
+            background-color: rgba(22, 32,43, .25);
+            border: 1px solid transparent;
+            &:hover {
+
+            }
+        }
+
+        // Active state, and its :hover to override normal :hover
+        &.active > a {
+            &,
+            &:hover,
+            &:focus {
+                background-color: #fff;
+                border: 1px solid $color-gray;
+                border-bottom-color: transparent;
+                cursor: default;
+            }
+        }
+    }
+}
+
+
+
+
+
+// Tabbable tabs
+// -------------------------
+
+// Hide tabbable panes to start, show them when `.active`
+.tab-content {
+    > .tab-pane {
+        display: none;
+    }
+    > .active {
+        display: block;
+    }
+}
+
+.fade {
+    opacity: 0;
+    transition: opacity linear .15s;
+    &.in {
+        opacity: 1;
+    }
+}

@@ -1,0 +1,49 @@
+.panel-title{
+    margin: 0;
+    padding-right: 15px;
+}
+
+.panel-body{
+    padding-top: 20px;
+}
+
+.panel-title__link{
+    position: relative;
+    z-index: 1;
+    display: block;
+    color: #000;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    &:after{
+        content: '';
+        position: absolute;
+        z-index: 2;
+        top: 8px;
+        right: -15px;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 6px 6px 0 6px;
+        border-color: $color-orange transparent transparent transparent;
+    }
+}
+
+// Transitions
+
+.collapse {
+    display: none;
+
+    &.in      { display: block; }
+}
+
+.collapsing {
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    transition-property: height, visibility;
+    transition-duration: .35s;
+    transition-timing-function: ease;
+}

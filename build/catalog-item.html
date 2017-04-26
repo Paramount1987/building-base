@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Store Base</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/index.css">
+        <style type="text/css">
+            #preloader {
+                position: fixed;
+                z-index: 9999;
+                top:0;
+                left:0;
+                right:0;
+                bottom:0;
+                background: #fff;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="preloader"></div>
+        <div id="wrapper">
+            <header>
+                <div class="header-top">
+                    <div class="header-top__container">
+                        <div class="header-top__container--left"><span>Регион:</span><span class="header-top__location">Казань</span></div>
+                        <div class="header-top__container--right"><a class="header-top__link" href="#">Вход</a><a class="header-top__link header-top__link--signup" href="#">Регистрация</a></div>
+                    </div>
+                </div>
+                <div class="header-bottom">
+                    <div class="header-bottom__container"><a class="header-logo" href="#"><img class="header-logo__img" src="img/index/logo.svg" alt="logo">
+                            <div class="header-logo__title">
+                                <h1>УПТК</h1><span>Строительная база</span>
+                            </div></a>
+                        <div class="header-catalog">
+                            <div class="header-catalog__box">Каталог</div>
+                        </div>
+                        <div class="header-feedback">
+                            <div class="header-feedback__text">Есть вопрос, звоните!</div><a class="header-feedback__phone" href="tel:88005005050">8 800 500 50 50</a>
+                        </div>
+                        <div class="header-search">
+                            <div class="header-search__form-control">
+                                <input class="header-search__input" placeholder="Поиск">
+                            </div>
+                            <button class="header-search__btn">Найти</button>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="container">
+                <div class="breadcrumbs">
+                    <ul class="breadcrumbs-list default-list">
+                        <li><a class="breadcrumbs-link" href="#">Главная</a></li>
+                        <li><a class="breadcrumbs-link" href="#">Каталог</a></li>
+                        <li><a class="breadcrumbs-link" href="#">Столярные изделия</a></li>
+                        <li><a class="breadcrumbs-link" href="#">Пиломатериалы</a></li>
+                        <li><a class="breadcrumbs-link" href="#">Бруски</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="catalog-single">
+                <div class="catalog-single__top">
+                    <div class="catalog-single__top-left">
+                        <ul class="catalog-single__preview-list default-list">
+                            <li><a class="catalog-single__preview-link is-active" href="img/catalog/elektrotovary.jpg"><img class="catalog-single__preview-small__img" src="img/catalog/elektrotovary.jpg" alt=""></a></li>
+                            <li><a class="catalog-single__preview-link" href="#"><img class="catalog-single__preview-small__img" src="" alt=""></a></li>
+                            <li><a class="catalog-single__preview-link" href="#"><img class="catalog-single__preview-small__img" src="" alt=""></a></li>
+                        </ul>
+                        <div class="catalog-single__preview">
+                            <div class="catalog-single__preview-large"><img class="catalog-single__preview-large__img" src="img/catalog/elektrotovary.jpg" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="catalog-single__top-right">
+                        <h4 class="catalog-single__title">Брусок строганный 40х40х3000 мм, хвоя</h4>
+                        <div class="catalog-single__code">(Артикул: 14330852)</div>
+                        <div class="catalog-single__price">80,00
+                            <div class="catalog-single__tare">руб./шт.</div>
+                        </div>
+                        <div class="catalog-single__order">
+                            <div class="catalog-single__form-control">
+                                <input class="catalog-single__input">
+                                <button class="catalog-single__plus">+</button>
+                                <button class="catalog-single__minus">-</button>
+                            </div>
+                            <button class="catalog-single__btn-order">в корзину</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="catalog-single__bottom">
+                    <div class="catalog-single__tab">
+                        <ul class="nav nav-tabs">
+                            <li class="active"><a class="catalog-single__tab-link" href="#desc" data-toggle="tab">Описание</a></li>
+                            <li><a class="catalog-single__tab-link" href="#properties" data-toggle="tab">Характеристики</a></li>
+                            <li><a class="catalog-single__tab-link" href="#review" data-toggle="tab">Отзывы</a></li>
+                        </ul>
+                        <div class="tab-content">
+                            <div class="tab-pane fade in active" id="desc">
+                                <div class="catalog-single__desc">
+                                    <h4 class="catalog-single__tab-title">Описание</h4>
+                                    <p class="catalog-single__desc-text">
+                                        Ударная дрель Practyl 500 Вт - отличный выбор для несложного ремонта
+                                        в квартире или небольшой домашней мастерской. Данный инструмент позволяет быстро
+                                        закручивать и выкручивать элементы крепежа (шурупы, саморезы), а также сверлить
+                                        неглубокие отверстия в древесине и листах металла.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="properties">
+                                <div class="catalog-single__properties">
+                                    <h4 class="catalog-single__tab-title">Характеристики</h4>
+                                    <ul class="catalog-single__properties-list default-list">
+                                        <li>
+                                            <div class="catalog-single__properties-item">
+                                                <div class="catalog-single__properties-item__left">Артикул:</div>
+                                                <div class="catalog-single__properties-item__right">14330852</div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="catalog-single__properties-item">
+                                                <div class="catalog-single__properties-item__left">Артикул:</div>
+                                                <div class="catalog-single__properties-item__right">14330852</div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="catalog-single__properties-item">
+                                                <div class="catalog-single__properties-item__left">Артикул:</div>
+                                                <div class="catalog-single__properties-item__right">14330852</div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="review">
+                                <h4>Отзывы</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="catalog-similar">
+                <div class="catalog-similar__inner">
+                    <div class="container-title">С этим товаром покупают</div>
+                    <div class="catalog-slider">
+                        <div class="js-catalog-slider">
+                            <div class="item"><a class="catalog-similar__item" href="#">
+                                    <div class="catalog-similar__item-top"><img class="catalog-similar__img" src="img/catalog/f01_metabo602139550.png" alt="img"></div>
+                                    <div class="catalog-similar__item-center">Пила стационарная Dexter 1200 В 210 мм</div>
+                                    <div class="catalog-similar__item-bottom"><span class="catalog-price">58,00</span><span class="catalog-tare">руб./шт.</span></div></a></div>
+                            <div class="item"><a class="catalog-similar__item" href="#">
+                                    <div class="catalog-similar__item-top"><img class="catalog-similar__img" src="img/catalog/13085613.jpg" alt="img"></div>
+                                    <div class="catalog-similar__item-center">Пила стационарная</div>
+                                    <div class="catalog-similar__item-bottom"><span class="catalog-price">6 988,00</span><span class="catalog-tare">руб./шт.</span></div></a></div>
+                            <div class="item"><a class="catalog-similar__item" href="#">
+                                    <div class="catalog-similar__item-top"><img class="catalog-similar__img" src="img/catalog/f01_metabo602139550.png" alt="img"></div>
+                                    <div class="catalog-similar__item-center">Пила стационарная Dexter 1200 В 210 мм</div>
+                                    <div class="catalog-similar__item-bottom"><span class="catalog-price">58,00</span><span class="catalog-tare">руб./шт.</span></div></a></div>
+                            <div class="item"><a class="catalog-similar__item" href="#">
+                                    <div class="catalog-similar__item-top"><img class="catalog-similar__img" src="img/catalog/f01_metabo602139550.png" alt="img"></div>
+                                    <div class="catalog-similar__item-center">Пила стационарная Dexter 1200 В 210 мм</div>
+                                    <div class="catalog-similar__item-bottom"><span class="catalog-price">58,00</span><span class="catalog-tare">руб./шт.</span></div></a></div>
+                            <div class="item"><a class="catalog-similar__item" href="#">
+                                    <div class="catalog-similar__item-top"><img class="catalog-similar__img" src="img/catalog/f01_metabo602139550.png" alt="img"></div>
+                                    <div class="catalog-similar__item-center">Пила стационарная Dexter 1200 В 210 мм</div>
+                                    <div class="catalog-similar__item-bottom"><span class="catalog-price">58,00</span><span class="catalog-tare">руб./шт.</span></div></a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer>
+                <div class="footer-top">
+                    <div class="footer-top__inner">
+                        <div class="footer-top__left">
+                            <div class="footer-top__map"></div>
+                        </div>
+                        <div class="footer-top__center">
+                            <div class="footer-top__company">
+                                <h4 class="footer-top__title">Компания</h4>
+                                <ul class="footer-nav default-list">
+                                    <li><a class="footer-nav__link" href="#">Акции</a></li>
+                                    <li><a class="footer-nav__link" href="#">О компании</a></li>
+                                    <li><a class="footer-nav__link" href="#">Услуги</a></li>
+                                    <li><a class="footer-nav__link" href="#">Доставка</a></li>
+                                    <li><a class="footer-nav__link" href="#">Контакты</a></li>
+                                    <li><a class="footer-nav__link" href="#">Отзывы</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="footer-top__right">
+                            <div class="footer-top__subscribe">
+                                <h4 class="footer-top__title">Подписаться на рассылку</h4>
+                                <div class="form-subscribe">
+                                    <div class="form-subscribe__form-control">
+                                        <input class="form-subscribe__input" placeholder="Введите ваш e-mail">
+                                    </div>
+                                    <button class="form-subscribe__btn">Подписаться</button>
+                                </div>
+                            </div>
+                            <div class="footer-top__social">
+                                <h4 class="footer-top__title">Мы в социальных сетях</h4>
+                                <ul class="list-social">
+                                    <li><a class="list-social__link" href="#">i</a></li>
+                                    <li><a class="list-social__link" href="#">i</a></li>
+                                    <li><a class="list-social__link" href="#">i</a></li>
+                                    <li><a class="list-social__link" href="#">i</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <div class="footer-bottom__inner">
+                        <div class="footer-bottom__left"><a class="footer-logo" href="#"><img class="footer-logo__img" src="img/index/logo.svg" alt="logo"></a><span>© Copyright «Строительная база УПТК», 2017</span></div>
+                        <div class="footer-bottom__right"><span>Создание сайта:</span><a class="logo-zeppelin" href="#"><img class="logo-zeppelin__img" src="img/index/logo-zeppelin.svg" alt="logo"></a></div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <script src="js/vendor/jquery-3.1.0.min.js"></script>
+        <script src="js/vendor/slick.min.js"></script>
+        <script src="js/index.js"></script>
+    </body>
+</html>

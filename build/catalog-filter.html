@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Store Base</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/index.css">
+        <style type="text/css">
+            #preloader {
+                position: fixed;
+                z-index: 9999;
+                top:0;
+                left:0;
+                right:0;
+                bottom:0;
+                background: #fff;
+            }
+        </style>
+    </head>
+    <body class="body-gray">
+        <div id="preloader"></div>
+        <div id="wrapper">
+            <header>
+                <div class="header-top">
+                    <div class="header-top__container">
+                        <div class="header-top__container--left"><span>Регион:</span><span class="header-top__location">Казань</span></div>
+                        <div class="header-top__container--right"><a class="header-top__link" href="#">Вход</a><a class="header-top__link header-top__link--signup" href="#">Регистрация</a></div>
+                    </div>
+                </div>
+                <div class="header-bottom">
+                    <div class="header-bottom__container"><a class="header-logo" href="#"><img class="header-logo__img" src="img/index/logo.svg" alt="logo">
+                            <div class="header-logo__title">
+                                <h1>УПТК</h1><span>Строительная база</span>
+                            </div></a>
+                        <div class="header-catalog">
+                            <div class="header-catalog__box">Каталог</div>
+                        </div>
+                        <div class="header-feedback">
+                            <div class="header-feedback__text">Есть вопрос, звоните!</div><a class="header-feedback__phone" href="tel:88005005050">8 800 500 50 50</a>
+                        </div>
+                        <div class="header-search">
+                            <div class="header-search__form-control">
+                                <input class="header-search__input" placeholder="Поиск">
+                            </div>
+                            <button class="header-search__btn">Найти</button>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="container">
+                <div class="breadcrumbs">
+                    <ul class="breadcrumbs-list default-list">
+                        <li><a class="breadcrumbs-link" href="#">Главная</a></li>
+                        <li><a class="breadcrumbs-link" href="#">Каталог</a></li>
+                        <li><a class="breadcrumbs-link" href="#">Инструменты</a></li>
+                        <li><a class="breadcrumbs-link" href="#">Электроинструмент</a></li>
+                        <li><a class="breadcrumbs-link" href="#">Дрели ударные</a></li>
+                    </ul>
+                </div>
+                <h1 class="container-title">Дрели ударные</h1>
+                <div class="container__inner">
+                    <div class="container-left">
+                        <div class="catalog-filter">
+                            <div class="catalog-filter__top"><span>Найдено 6 товаров</span></div>
+                            <div class="catalog-filter__item">
+                                <div class="panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title"><a class="panel-title__link" href="#collapseOne" data-toggle="collapse">Цена</a></h4>
+                                    </div>
+                                    <div class="panel-collapse collapse in" id="collapseOne">
+                                        <div class="panel-body">
+                                            <div class="slider-range">
+                                                <input class="slider-range__input" type="text">
+                                                <div class="slider-range__bottom">
+                                                    <div class="slider-range__values">
+                                                        <input class="slider-range__input-min js-input-min">
+                                                        <input class="slider-range__input-max js-input-max">
+                                                    </div>
+                                                    <div class="slider-range__btns">
+                                                        <button class="slider-range__btn-orange">применить</button>
+                                                        <button class="slider-range__btn-white">Сбросить</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="catalog-filter__item">
+                                <div class="panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title"><a class="panel-title__link" href="#collapseTwo" data-toggle="collapse">Марка</a></h4>
+                                    </div>
+                                    <div class="panel-collapse collapse in" id="collapseTwo">
+                                        <div class="panel-body">
+                                            <div class="checkbox-item">
+                                                <input class="checkbox-input" id="checkbox1" type="checkbox">
+                                                <label class="checkbox-label checkbox-label--uc" for="checkbox1">dexter</label>
+                                            </div>
+                                            <div class="checkbox-item">
+                                                <input class="checkbox-input" id="checkbox2" type="checkbox">
+                                                <label class="checkbox-label checkbox-label--uc" for="checkbox2">metabo</label>
+                                            </div>
+                                            <div class="checkbox-item">
+                                                <input class="checkbox-input" id="checkbox3" type="checkbox">
+                                                <label class="checkbox-label checkbox-label--uc" for="checkbox3">practyl</label>
+                                            </div>
+                                            <div class="checkbox-item">
+                                                <input class="checkbox-input" id="checkbox4" type="checkbox">
+                                                <label class="checkbox-label checkbox-label--uc" for="checkbox4">bosh</label>
+                                            </div>
+                                            <div class="checkbox-item">
+                                                <input class="checkbox-input" id="checkbox5" type="checkbox">
+                                                <label class="checkbox-label checkbox-label--uc" for="checkbox5">фиолент</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="catalog-filter__item">
+                                <div class="panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title"><a class="panel-title__link" href="#collapseThree" data-toggle="collapse">Количество скоростей</a></h4>
+                                    </div>
+                                    <div class="panel-collapse collapse in" id="collapseThree">
+                                        <div class="panel-body">
+                                            <div class="checkbox-item">
+                                                <input class="checkbox-input" id="checkbox6" type="checkbox">
+                                                <label class="checkbox-label" for="checkbox6">1</label>
+                                            </div>
+                                            <div class="checkbox-item">
+                                                <input class="checkbox-input" id="checkbox7" type="checkbox">
+                                                <label class="checkbox-label" for="checkbox7">2</label>
+                                            </div>
+                                            <div class="checkbox-item">
+                                                <input class="checkbox-input" id="checkbox8" type="checkbox">
+                                                <label class="checkbox-label" for="checkbox8">5</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="catalog-filter__item">
+                                <div class="panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title"><a class="panel-title__link" href="#collapseFour" data-toggle="collapse">Тип патрона</a></h4>
+                                    </div>
+                                    <div class="panel-collapse collapse in" id="collapseFour">
+                                        <div class="panel-body">
+                                            <div class="checkbox-item">
+                                                <input class="checkbox-input" id="checkbox9" type="checkbox">
+                                                <label class="checkbox-label" for="checkbox9">Ключевой</label>
+                                            </div>
+                                            <div class="checkbox-item">
+                                                <input class="checkbox-input" id="checkbox10" type="checkbox">
+                                                <label class="checkbox-label" for="checkbox10">Быстрозажимной</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-right">
+                        <ul class="thing-list default-list thing-list--line">
+                            <li>
+                                <div class="thing-item">
+                                    <div class="thing-item__top"><img class="thing-item__img" src="img/catalog/13085613.jpg"></div>
+                                    <div class="thing-item__center">
+                                        <div class="thing-item__title">Дрель сетевая ударная 400 Вт</div>
+                                        <div class="thing-item__price">
+                                            <div class="thing-item__price-number">427<span>,00</span></div><span>р.</span>
+                                        </div>
+                                        <button class="thing-item__btn">в корзину</button>
+                                    </div>
+                                    <div class="thing-item__bottom">
+                                        <div class="thing-item__property">
+                                            <div class="thing-item__property-left">Артикул:</div>
+                                            <div class="thing-item__property-right">13805983</div>
+                                        </div>
+                                        <div class="thing-item__property">
+                                            <div class="thing-item__property-left">Вес, кг:</div>
+                                            <div class="thing-item__property-right">1.58</div>
+                                        </div>
+                                        <div class="thing-item__property">
+                                            <div class="thing-item__property-left">Страна-производитель:</div>
+                                            <div class="thing-item__property-right">Китай</div>
+                                        </div>
+                                        <div class="thing-item__property">
+                                            <div class="thing-item__property-left">Гарантия:</div>
+                                            <div class="thing-item__property-right">6 месяцев</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="thing-item">
+                                    <div class="thing-item__top"><img class="thing-item__img" src="img/catalog/13085613.jpg"></div>
+                                    <div class="thing-item__center">
+                                        <div class="thing-item__title">Дрель сетевая ударная 400 Вт</div>
+                                        <div class="thing-item__price">
+                                            <div class="thing-item__price-number">2 181<span>,00</span></div><span>р.</span>
+                                        </div>
+                                        <button class="thing-item__btn">в корзину</button>
+                                    </div>
+                                    <div class="thing-item__bottom">
+                                        <div class="thing-item__property">
+                                            <div class="thing-item__property-left">Артикул:</div>
+                                            <div class="thing-item__property-right">13805983</div>
+                                        </div>
+                                        <div class="thing-item__property">
+                                            <div class="thing-item__property-left">Вес, кг:</div>
+                                            <div class="thing-item__property-right">1.58</div>
+                                        </div>
+                                        <div class="thing-item__property">
+                                            <div class="thing-item__property-left">Страна-производитель:</div>
+                                            <div class="thing-item__property-right">Китай</div>
+                                        </div>
+                                        <div class="thing-item__property">
+                                            <div class="thing-item__property-left">Гарантия:</div>
+                                            <div class="thing-item__property-right">6 месяцев</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="thing-item">
+                                    <div class="thing-item__top"><img class="thing-item__img" src="img/catalog/13085613.jpg"></div>
+                                    <div class="thing-item__center">
+                                        <div class="thing-item__title">Дрель сетевая ударная 400 Вт</div>
+                                        <div class="thing-item__price">
+                                            <div class="thing-item__price-number">427<span>,00</span></div><span>р.</span>
+                                        </div>
+                                        <button class="thing-item__btn">в корзину</button>
+                                    </div>
+                                    <div class="thing-item__bottom">
+                                        <div class="thing-item__property">
+                                            <div class="thing-item__property-left">Артикул:</div>
+                                            <div class="thing-item__property-right">13805983</div>
+                                        </div>
+                                        <div class="thing-item__property">
+                                            <div class="thing-item__property-left">Вес, кг:</div>
+                                            <div class="thing-item__property-right">1.58</div>
+                                        </div>
+                                        <div class="thing-item__property">
+                                            <div class="thing-item__property-left">Страна-производитель:</div>
+                                            <div class="thing-item__property-right">Китай</div>
+                                        </div>
+                                        <div class="thing-item__property">
+                                            <div class="thing-item__property-left">Гарантия:</div>
+                                            <div class="thing-item__property-right">6 месяцев</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="thing-item">
+                                    <div class="thing-item__top"><img class="thing-item__img" src="img/catalog/13085613.jpg"></div>
+                                    <div class="thing-item__center">
+                                        <div class="thing-item__title">Дрель сетевая ударная 400 Вт</div>
+                                        <div class="thing-item__price">
+                                            <div class="thing-item__price-number">427<span>,00</span></div><span>р.</span>
+                                        </div>
+                                        <button class="thing-item__btn">в корзину</button>
+                                    </div>
+                                    <div class="thing-item__bottom">
+                                        <div class="thing-item__property">
+                                            <div class="thing-item__property-left">Артикул:</div>
+                                            <div class="thing-item__property-right">13805983</div>
+                                        </div>
+                                        <div class="thing-item__property">
+                                            <div class="thing-item__property-left">Вес, кг:</div>
+                                            <div class="thing-item__property-right">1.58</div>
+                                        </div>
+                                        <div class="thing-item__property">
+                                            <div class="thing-item__property-left">Страна-производитель:</div>
+                                            <div class="thing-item__property-right">Китай</div>
+                                        </div>
+                                        <div class="thing-item__property">
+                                            <div class="thing-item__property-left">Гарантия:</div>
+                                            <div class="thing-item__property-right">6 месяцев</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <footer>
+                <div class="footer-top">
+                    <div class="footer-top__inner">
+                        <div class="footer-top__left">
+                            <div class="footer-top__map"></div>
+                        </div>
+                        <div class="footer-top__center">
+                            <div class="footer-top__company">
+                                <h4 class="footer-top__title">Компания</h4>
+                                <ul class="footer-nav default-list">
+                                    <li><a class="footer-nav__link" href="#">Акции</a></li>
+                                    <li><a class="footer-nav__link" href="#">О компании</a></li>
+                                    <li><a class="footer-nav__link" href="#">Услуги</a></li>
+                                    <li><a class="footer-nav__link" href="#">Доставка</a></li>
+                                    <li><a class="footer-nav__link" href="#">Контакты</a></li>
+                                    <li><a class="footer-nav__link" href="#">Отзывы</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="footer-top__right">
+                            <div class="footer-top__subscribe">
+                                <h4 class="footer-top__title">Подписаться на рассылку</h4>
+                                <div class="form-subscribe">
+                                    <div class="form-subscribe__form-control">
+                                        <input class="form-subscribe__input" placeholder="Введите ваш e-mail">
+                                    </div>
+                                    <button class="form-subscribe__btn">Подписаться</button>
+                                </div>
+                            </div>
+                            <div class="footer-top__social">
+                                <h4 class="footer-top__title">Мы в социальных сетях</h4>
+                                <ul class="list-social">
+                                    <li><a class="list-social__link" href="#">i</a></li>
+                                    <li><a class="list-social__link" href="#">i</a></li>
+                                    <li><a class="list-social__link" href="#">i</a></li>
+                                    <li><a class="list-social__link" href="#">i</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <div class="footer-bottom__inner">
+                        <div class="footer-bottom__left"><a class="footer-logo" href="#"><img class="footer-logo__img" src="img/index/logo.svg" alt="logo"></a><span>© Copyright «Строительная база УПТК», 2017</span></div>
+                        <div class="footer-bottom__right"><span>Создание сайта:</span><a class="logo-zeppelin" href="#"><img class="logo-zeppelin__img" src="img/index/logo-zeppelin.svg" alt="logo"></a></div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <script src="js/vendor/jquery-3.1.0.min.js"></script>
+        <script src="js/vendor/slick.min.js"></script>
+        <script src="js/index.js"></script>
+    </body>
+</html>

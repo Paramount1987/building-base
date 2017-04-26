@@ -1,0 +1,143 @@
+﻿doctype html
+html(lang='')
+    head
+        meta(charset='utf-8')
+        meta(http-equiv='x-ua-compatible', content='ie=edge')
+        title Store Base
+        meta(name='description', content='')
+        meta(name='viewport', content='width=device-width, initial-scale=1')
+
+        link(rel='stylesheet', href='css/index.css')
+        style(type="text/css").
+            #preloader {
+                position: fixed;
+                z-index: 9999;
+                top:0;
+                left:0;
+                right:0;
+                bottom:0;
+                background: #fff;
+            }
+    body
+        #preloader
+        #wrapper
+            include include/header.pug
+            .slider-content
+                .slider-content__inner
+                    .slider-main.js-slider
+                        .item
+                            .item-inner
+                                .item-left
+                                    h4.item-title Сезонные скидки на строительные материалы
+                                    a(href="#").item-btn-link Подробнее
+                                .item-right
+                                    img(src="img/slider/materials.jpg", alt="img").item-img
+                        .item
+                            .item-inner
+                                .item-left
+                                    h4.item-title Сезонные скидки на строительные материалы
+                                    a(href="#").item-btn-link Подробнее
+                                .item-right
+                                    img(src="img/slider/kraska.jpg", alt="img").item-img
+                        .item
+                            .item-inner
+                                .item-left
+                                    h4.item-title Сезонные скидки на строительные материалы
+                                    a(href="#").item-btn-link Подробнее
+                                .item-right
+                                    img(src="img/slider/Jim-Larrison.jpg", alt="img").item-img
+            .advantage-content
+                .advantage-content__inner
+                    .container-title Наши преимущества
+                    ul.advantage-list.default-list
+                        li
+                            .advantage-list__title огромный ассортимент
+                        li
+                            .advantage-list__title низкие цены
+                        li
+                            .advantage-list__title бесплатная доставка
+            .container
+                .catalog-content
+                    .container-title Каталог товаров
+                    ul.catalog-content__list.default-list
+                        li
+                            a(href="#").catalog-content__list-link
+                                .catalog-content__list-top
+                                    img(src="img/catalog/strojmaterialy.jpg", alt="img").catalog-content__list-img
+                                .catalog-content__list-title Стройматериалы
+                        li
+                            a(href="#").catalog-content__list-link
+                                .catalog-content__list-top
+                                    img(src="img/catalog/plitka-polimernya.jpg", alt="img").catalog-content__list-img
+                                .catalog-content__list-title Плитка
+                        li
+                            a(href="#").catalog-content__list-link
+                                .catalog-content__list-top
+                                    img(src="img/catalog/ods-main.png", alt="img").catalog-content__list-img
+                                .catalog-content__list-title Столярные изделия
+                        li
+                            a(href="#").catalog-content__list-link
+                                .catalog-content__list-top
+                                    img(src="img/catalog/elektrotovary.jpg", alt="img").catalog-content__list-img
+                                .catalog-content__list-title Электротовары
+                        li
+                            a(href="#").catalog-content__list-link
+                                .catalog-content__list-top
+                                    img(src="img/catalog/stroitelnyi-instrument.jpg", alt="img").catalog-content__list-img
+                                .catalog-content__list-title Инструменты
+                        li
+                            a(href="#").catalog-content__list-link
+                                .catalog-content__list-top
+                                    img(src="img/catalog/napolnye-pokrytiya.jpg", alt="img").catalog-content__list-img
+                                .catalog-content__list-title Напольные покрытия
+                        li
+                            a(href="#").catalog-content__list-link
+                                .catalog-content__list-top
+                                    img(src="img/catalog/img_20267.png", alt="img").catalog-content__list-img
+                                .catalog-content__list-title Сантехника
+                        li
+                            a(href="#").catalog-content__list-link
+                                .catalog-content__list-top
+                                    img(src="img/catalog/rezbovaya-furnitura-fitingi.jpg", alt="img").catalog-content__list-img
+                                .catalog-content__list-title Водоснабжение
+                        li
+                            a(href="#").catalog-content__list-link
+                                .catalog-content__list-top
+                                    img(src="img/catalog/lejka.jpg", alt="img").catalog-content__list-img
+                                .catalog-content__list-title Сад
+                        li
+                            a(href="#").catalog-content__list-link
+                                .catalog-content__list-top
+                                    img(src="img/catalog/114965_original.jpg", alt="img").catalog-content__list-img
+                                .catalog-content__list-title Скобяные изделия
+                        li
+                            a(href="#").catalog-content__list-link
+                                .catalog-content__list-top
+                                    img(src="img/catalog/laki-kraski-rzn.jpg", alt="img").catalog-content__list-img
+                                .catalog-content__list-title Краски
+                        li
+                            a(href="#").catalog-content__list-link
+                                .catalog-content__list-top
+                                    img(src="img/catalog/0189698_PE343686_S5.jpg", alt="img").catalog-content__list-img
+                                .catalog-content__list-title Декор
+                        li
+                            a(href="#").catalog-content__list-link
+                                .catalog-content__list-top
+                                    img(src="img/catalog/Odeon_2330-1T.jpg", alt="img").catalog-content__list-img
+                                .catalog-content__list-title Освещение
+                        li
+                            a(href="#").catalog-content__list-link
+                                .catalog-content__list-top
+                                    img(src="img/catalog/563a61c1b9030321bf24aa48694d9de4.png", alt="img").catalog-content__list-img
+                                .catalog-content__list-title Хранение
+                        li
+                            a(href="#").catalog-content__list-link
+                                .catalog-content__list-top
+                                    img(src="img/catalog/kuhnya (burn).png", alt="img").catalog-content__list-img
+                                .catalog-content__list-title Кухня
+                        li
+                            a(href="#").catalog-content__list-link
+            include include/footer.pug
+        script(src='js/vendor/jquery-3.1.0.min.js')
+        script(src='js/vendor/slick.min.js')
+        script(src='js/index.js')

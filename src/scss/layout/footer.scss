@@ -1,0 +1,188 @@
+footer{
+  position: absolute;
+  left:0;
+  bottom: 0;
+  width: 100%;
+  height: 618px;
+}
+
+//------------footer top
+.footer-top{
+    min-width: $screen-w;
+    border-top: 4px solid $color-orange;
+    padding: 70px 0;
+    background-color: rgba(22, 32, 43, .1);
+}
+
+.footer-top__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: $screen-w;
+    margin: 0 auto;
+    padding: 0 80px;
+}
+
+.footer-top__right{
+    position: relative;
+    z-index: 1;
+    top: -26px;
+    text-align: left;
+}
+
+.footer-top__map{
+    width: 544px;
+    height: 344px;
+    background-color: #fff;
+    border: 2px solid #fff;
+}
+
+.footer-top__title{
+    margin: 0;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+//-------------form subscribe
+.footer-top__subscribe{
+    margin-bottom: 50px;
+}
+
+.form-subscribe{
+  margin-top: 40px;
+  font-size: 0;
+}
+
+.form-subscribe__form-control{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.form-subscribe__input{
+    width: 255px;
+    height: 50px;
+    padding: 0 15px;
+    border: 2px solid $color-orange;
+    border-right: none;
+    font-size: 16px;
+    outline: none;
+}
+
+.form-subscribe__btn{
+    display: inline-block;
+    width: 158px;
+    height: 50px;
+    vertical-align: top;
+    background-color: $color-orange;
+    border: none;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    outline: 0;
+    cursor: pointer;
+}
+
+//-------------- list social
+.list-social{
+    margin: 30px 0 0 0;
+    padding: 0;
+    list-style: none;
+
+    li{
+        display: inline-block;
+        margin-right: 20px;
+        vertical-align: top;
+    }
+
+    li:last-child{
+        margin-right: 0;
+    }
+}
+
+.list-social__link{
+    display: block;
+    width: 45px;
+    height: 45px;
+    border: 2px solid $color-orange;
+    border-radius: 45px;
+    transition: all linear .2s;
+    background-color: transparent;
+    color: $color-orange;
+    text-align: center;
+    text-decoration: none;
+
+    &:hover{
+        background-color: $color-orange;
+        color: #fff;
+    }
+}
+
+//--------------footer nav
+.footer-nav{
+
+    li{
+        margin-top: 28px;
+    }
+}
+
+.footer-nav__link{
+    color: $color-orange;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+//------------footer bottom
+.footer-bottom{
+    background-color: $color-blue;
+    min-width: $screen-w;
+}
+
+.footer-bottom__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $color-blue;
+    width: $screen-w;
+    height: 130px;
+    margin: 0 auto;
+    padding: 0 80px;
+}
+
+.footer-bottom__left{
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    color: #fff;
+
+    span{
+        display: inline-block;
+        margin-left: 10px;
+    }
+}
+
+.footer-logo{
+    display: inline-block;
+}
+
+.footer-logo__img{
+    width: 50px;
+    height: 57px;
+}
+
+.footer-bottom__right{
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    color: #5c636b;
+
+    span{
+        margin-right: 10px;
+    }
+}
+
+.logo-zeppelin__img{
+    width: 74px;
+    height: 38px;
+}

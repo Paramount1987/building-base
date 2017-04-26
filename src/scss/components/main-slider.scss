@@ -1,0 +1,144 @@
+.slider-content{
+    width: $screen-w;
+    margin: 0 auto;
+    padding: 0 80px;
+}
+
+.slider-main{
+    position: relative;
+    z-index: 1;
+    padding: 50px 0 30px 0;
+
+    .item-inner{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 120px 0 150px;
+    }
+
+    .item-left{
+        width: 365px;
+    }
+
+    .item-right{
+        width: 595px;
+    }
+
+    .item-img{
+        width: 100%;
+    }
+
+    .item-title{
+        margin: 0 0 65px 0;
+        font-size: 35px;
+        font-weight: 700;
+        line-height: 40px;
+    }
+
+    .item-btn-link{
+        display: block;
+        width: 158px;
+        border: 2px solid $color-orange;
+        font-weight: 700;
+        line-height: 50px;
+        color: $color-orange;
+        text-align: center;
+        text-transform: uppercase;
+        text-decoration: none;
+        transition: all linear .2s;
+
+        &:hover{
+            background-color: $color-orange;
+            color: #fff;
+        }
+    }
+
+    .slick-arrow{
+        position: absolute;
+        z-index: 10;
+        top: 50%;
+        width: 50px;
+        height: 50px;
+        font-size: 0;
+        margin-top: -25px;
+        background-color: transparent;
+        border: 2px solid $color-orange;
+        outline: 0;
+        cursor: pointer;
+        transition: all linear .2s;
+
+        &:hover{
+            background-color: $color-orange;
+        }
+    }
+
+    .slick-prev{
+        left: 0;
+
+        &:after{
+            content: '';
+            position: absolute;
+            z-index: 1;
+            top: 50%;
+            left: 50%;
+            margin: -10px 0 0 -3px;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 10px 6px 10px 0;
+            border-color: transparent $color-orange transparent transparent;
+        }
+
+        &:hover:after{
+            border-color: transparent #fff transparent transparent;
+        }
+    }
+
+    .slick-next{
+        right: 0;
+
+        &:after{
+            content: '';
+            position: absolute;
+            z-index: 1;
+            top: 50%;
+            left: 50%;
+            margin: -10px 0 0 -3px;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 10px 0 10px 6px;
+            border-color: transparent transparent transparent $color-orange;
+        }
+
+        &:hover:after{
+            border-color: transparent transparent transparent #fff;
+        }
+    }
+
+    .slick-dots{
+        margin: 0;
+        padding: 20px 0 0 0;
+        text-align: center;
+
+        li{
+            display: inline-block;
+            margin: 0 10px;
+            vertical-align: top;
+            width: 16px;
+            height: 16px;
+            border: 1px solid $color-orange;
+            background-color: transparent;
+            border-radius: 16px;
+            font-size: 0;
+
+            button{
+                display: none;
+            }
+        }
+
+        li.slick-active{
+            background-color: $color-orange;
+        }
+    }
+}

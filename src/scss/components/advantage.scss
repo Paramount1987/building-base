@@ -1,0 +1,30 @@
+.advantage-content{
+    min-width: $screen-w;
+    background-color: rgba(22, 32, 43, .1);
+}
+
+.advantage-content__inner{
+    width: $screen-w;
+    margin: 0 auto;
+    padding: 80px;
+}
+
+.advantage-list{
+    display: flex;
+    justify-content: space-between;
+    width: 925px;
+    margin: 0 auto;
+    padding-top: 20px;
+
+    li{
+        width: 125px;
+    }
+}
+
+.advantage-list__title{
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+}

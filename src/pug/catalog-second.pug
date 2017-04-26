@@ -1,0 +1,89 @@
+doctype html
+html(lang='')
+    head
+        meta(charset='utf-8')
+        meta(http-equiv='x-ua-compatible', content='ie=edge')
+        title Store Base
+        meta(name='description', content='')
+        meta(name='viewport', content='width=device-width, initial-scale=1')
+
+        link(rel='stylesheet', href='css/index.css')
+        style(type="text/css").
+            #preloader {
+                position: fixed;
+                z-index: 9999;
+                top:0;
+                left:0;
+                right:0;
+                bottom:0;
+                background: #fff;
+            }
+    body.body-gray
+        #preloader
+        #wrapper
+            include include/header.pug
+            .container
+                .breadcrumbs
+                    ul.breadcrumbs-list.default-list
+                        li
+                            a(href="#").breadcrumbs-link Главная
+                        li
+                            a(href="#").breadcrumbs-link Каталог
+                h1.container-title Каталог товаров
+                .container__inner
+                    .container-left
+                        ul.catalog-nav.default-list
+                            li
+                                a(href="#").catalog-nav__link стройматериалы
+                            li
+                                a(href="#").catalog-nav__link плитка
+                            li
+                                a(href="#").catalog-nav__link столярные изделия
+                            li
+                                a(href="#").catalog-nav__link электротовары
+                            li
+                                a(href="#").catalog-nav__link.is-active инструменты
+                            li
+                                a(href="#").catalog-nav__link напольные покрытия
+                            li
+                                a(href="#").catalog-nav__link сантехника
+                            li
+                                a(href="#").catalog-nav__link водоснабжение
+                            li
+                                a(href="#").catalog-nav__link сад
+                            li
+                                a(href="#").catalog-nav__link скобяные изделия
+                            li
+                                a(href="#").catalog-nav__link краски
+                            li
+                                a(href="#").catalog-nav__link декор
+                            li
+                                a(href="#").catalog-nav__link освещение
+                            li
+                                a(href="#").catalog-nav__link хранение
+                            li
+                                a(href="#").catalog-nav__link кухня
+                    .container-right
+                        ul.catalog-content__list.catalog-content__list--sm.default-list
+                            li
+                                a(href="#").catalog-content__list-link.catalog-content__list-link--noimg
+                                    .catalog-content__list-title Вибрационные шлифовальные машины
+                            li
+                                a(href="#").catalog-content__list-link.catalog-content__list-link--noimg
+                                    .catalog-content__list-title Плитка
+                            li
+                                a(href="#").catalog-content__list-link.catalog-content__list-link--noimg
+                                    .catalog-content__list-title Столярные изделия
+                            li
+                                a(href="#").catalog-content__list-link.catalog-content__list-link--noimg
+                                    .catalog-content__list-title Электротовары
+                            li
+                                a(href="#").catalog-content__list-link.catalog-content__list-link--noimg
+                                    .catalog-content__list-title Инструменты
+                            li
+                                a(href="#").catalog-content__list-link.catalog-content__list-link--noimg
+                                    .catalog-content__list-title Напольные покрытия
+            include include/footer.pug
+        script(src='js/vendor/jquery-3.1.0.min.js')
+        script(src='js/vendor/slick.min.js')
+        script(src='js/index.js')

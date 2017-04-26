@@ -1,0 +1,78 @@
+//-----------------------------checkbox
+.checkbox-item{
+    margin-bottom: 5px;
+}
+
+input[type="checkbox"]{
+    appearance: none;
+    border: 1px solid $color-gray;
+    width: 22px;
+    height: 22px;
+    margin: 0 12px 0 0;
+}
+
+input[type="checkbox"]:checked{
+    background: $color-orange;
+    border-color: $color-orange;
+}
+
+input[type="checkbox"]:focus{
+    outline: none;
+}
+
+.checkbox-label{
+    vertical-align: top;
+}
+
+.checkbox-label--uc{
+    text-transform: uppercase;
+}
+
+//-------------------------------slider range form
+.slider-range__bottom{
+    padding-top: 20px;
+}
+
+.slider-range__values{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+
+    input{
+        width: 90px;
+        padding: 0 15px;
+        border: 1px solid $color-gray;
+        font-size: 18px;
+        line-height: 40px;
+        outline: none;
+    }
+}
+
+.slider-range__btns{
+    display: flex;
+    justify-content: space-between;
+
+    button{
+        padding: 0;
+        border: none;
+        outline: 0;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 40px;
+        text-align: center;
+        cursor: pointer;
+    }
+}
+
+.slider-range__btn-orange{
+    width: 128px;
+    background-color: $color-orange;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.slider-range__btn-white{
+    width: 110px;
+    color: $color-orange;
+    background-color: #fff;
+}

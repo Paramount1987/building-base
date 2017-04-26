@@ -1,0 +1,48 @@
+.breadcrumbs{
+    padding: 45px 0;
+}
+
+.breadcrumbs-list{
+    margin-left: -10px;
+
+    li{
+        display: inline-block;
+        margin-left: 10px;
+        vertical-align: top;
+    }
+}
+
+.breadcrumbs-link{
+    position: relative;
+    z-index: 1;
+    display: block;
+    background-color: rgba(22, 32, 43, .1);
+    padding: 0 30px 0 15px;
+    font-size: 12px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: #000;
+    text-decoration: none;
+    transition: all linear .2s;
+
+    &:after{
+        content: '';
+        position: absolute;
+        top: 10px;
+        right: 12px;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 4px 0 4px 4px;
+        border-color: transparent transparent transparent $color-orange;
+    }
+
+    &:hover{
+        background-color: $color-orange;
+        color: #fff;
+
+        &:after{
+            border-color: transparent transparent transparent #fff;
+        }
+    }
+}

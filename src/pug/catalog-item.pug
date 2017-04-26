@@ -1,0 +1,161 @@
+doctype html
+html(lang='')
+    head
+        meta(charset='utf-8')
+        meta(http-equiv='x-ua-compatible', content='ie=edge')
+        title Store Base
+        meta(name='description', content='')
+        meta(name='viewport', content='width=device-width, initial-scale=1')
+
+        link(rel='stylesheet', href='css/index.css')
+        style(type="text/css").
+            #preloader {
+                position: fixed;
+                z-index: 9999;
+                top:0;
+                left:0;
+                right:0;
+                bottom:0;
+                background: #fff;
+            }
+    body
+        #preloader
+        #wrapper
+            include include/header.pug
+            .container
+                .breadcrumbs
+                    ul.breadcrumbs-list.default-list
+                        li
+                            a(href="#").breadcrumbs-link Главная
+                        li
+                            a(href="#").breadcrumbs-link Каталог
+                        li
+                            a(href="#").breadcrumbs-link Столярные изделия
+                        li
+                            a(href="#").breadcrumbs-link Пиломатериалы
+                        li
+                            a(href="#").breadcrumbs-link Бруски
+            .catalog-single
+                .catalog-single__top
+                    .catalog-single__top-left
+                        ul.catalog-single__preview-list.default-list
+                            li
+                                a(href="img/catalog/elektrotovary.jpg").catalog-single__preview-link.is-active
+                                    img(src="img/catalog/elektrotovary.jpg", alt="").catalog-single__preview-small__img
+                            li
+                                a(href="#").catalog-single__preview-link
+                                    img(src="", alt="").catalog-single__preview-small__img
+                            li
+                                a(href="#").catalog-single__preview-link
+                                    img(src="", alt="").catalog-single__preview-small__img
+                        .catalog-single__preview
+                            .catalog-single__preview-large
+                                img(src="img/catalog/elektrotovary.jpg", alt="").catalog-single__preview-large__img
+                    .catalog-single__top-right
+                        h4.catalog-single__title Брусок строганный 40х40х3000 мм, хвоя
+                        .catalog-single__code (Артикул: 14330852)
+                        .catalog-single__price
+                            | 80,00
+                            .catalog-single__tare руб./шт.
+                        .catalog-single__order
+                            .catalog-single__form-control
+                                input.catalog-single__input
+                                button.catalog-single__plus +
+                                button.catalog-single__minus -
+                            button.catalog-single__btn-order в корзину
+                .catalog-single__bottom
+                    .catalog-single__tab
+                        ul.nav.nav-tabs
+                            li.active
+                                a(href="#desc", data-toggle="tab").catalog-single__tab-link Описание
+                            li
+                                a(href="#properties", data-toggle="tab").catalog-single__tab-link Характеристики
+                            li
+                                a(href="#review", data-toggle="tab").catalog-single__tab-link Отзывы
+                        .tab-content
+                            #desc.tab-pane.fade.in.active
+                                .catalog-single__desc
+                                    h4.catalog-single__tab-title Описание
+                                    p.catalog-single__desc-text
+                                        | Ударная дрель Practyl 500 Вт - отличный выбор для несложного ремонта
+                                        | в квартире или небольшой домашней мастерской. Данный инструмент позволяет быстро
+                                        | закручивать и выкручивать элементы крепежа (шурупы, саморезы), а также сверлить
+                                        | неглубокие отверстия в древесине и листах металла.
+                            #properties.tab-pane.fade
+                                .catalog-single__properties
+                                    h4.catalog-single__tab-title Характеристики
+                                    ul.catalog-single__properties-list.default-list
+                                        li
+                                            .catalog-single__properties-item
+                                                .catalog-single__properties-item__left
+                                                    | Артикул:
+                                                .catalog-single__properties-item__right
+                                                    | 14330852
+                                        li
+                                            .catalog-single__properties-item
+                                                .catalog-single__properties-item__left
+                                                    | Артикул:
+                                                .catalog-single__properties-item__right
+                                                    | 14330852
+                                        li
+                                            .catalog-single__properties-item
+                                                .catalog-single__properties-item__left
+                                                    | Артикул:
+                                                .catalog-single__properties-item__right
+                                                    | 14330852
+                            #review.tab-pane.fade
+                                h4 Отзывы
+            .catalog-similar
+                .catalog-similar__inner
+                    .container-title С этим товаром покупают
+                    .catalog-slider
+                        .js-catalog-slider
+                            .item
+                                a(href="#").catalog-similar__item
+                                    .catalog-similar__item-top
+                                        img(src="img/catalog/f01_metabo602139550.png", alt="img").catalog-similar__img
+                                    .catalog-similar__item-center
+                                        | Пила стационарная Dexter 1200 В 210 мм
+                                    .catalog-similar__item-bottom
+                                        span.catalog-price 58,00
+                                        span.catalog-tare руб./шт.
+                            .item
+                                a(href="#").catalog-similar__item
+                                    .catalog-similar__item-top
+                                        img(src="img/catalog/13085613.jpg", alt="img").catalog-similar__img
+                                    .catalog-similar__item-center
+                                        | Пила стационарная
+                                    .catalog-similar__item-bottom
+                                        span.catalog-price 6 988,00
+                                        span.catalog-tare руб./шт.
+                            .item
+                                a(href="#").catalog-similar__item
+                                    .catalog-similar__item-top
+                                        img(src="img/catalog/f01_metabo602139550.png", alt="img").catalog-similar__img
+                                    .catalog-similar__item-center
+                                        | Пила стационарная Dexter 1200 В 210 мм
+                                    .catalog-similar__item-bottom
+                                        span.catalog-price 58,00
+                                        span.catalog-tare руб./шт.
+                            .item
+                                a(href="#").catalog-similar__item
+                                    .catalog-similar__item-top
+                                        img(src="img/catalog/f01_metabo602139550.png", alt="img").catalog-similar__img
+                                    .catalog-similar__item-center
+                                        | Пила стационарная Dexter 1200 В 210 мм
+                                    .catalog-similar__item-bottom
+                                        span.catalog-price 58,00
+                                        span.catalog-tare руб./шт.
+                            .item
+                                a(href="#").catalog-similar__item
+                                    .catalog-similar__item-top
+                                        img(src="img/catalog/f01_metabo602139550.png", alt="img").catalog-similar__img
+                                    .catalog-similar__item-center
+                                        | Пила стационарная Dexter 1200 В 210 мм
+                                    .catalog-similar__item-bottom
+                                        span.catalog-price 58,00
+                                        span.catalog-tare руб./шт.
+            include include/footer.pug
+        script(src='js/vendor/jquery-3.1.0.min.js')
+        script(src='js/vendor/slick.min.js')
+        script(src='js/index.js')

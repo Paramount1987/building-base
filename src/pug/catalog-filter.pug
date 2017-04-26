@@ -1,0 +1,217 @@
+doctype html
+html(lang='')
+    head
+        meta(charset='utf-8')
+        meta(http-equiv='x-ua-compatible', content='ie=edge')
+        title Store Base
+        meta(name='description', content='')
+        meta(name='viewport', content='width=device-width, initial-scale=1')
+
+        link(rel='stylesheet', href='css/index.css')
+        style(type="text/css").
+            #preloader {
+                position: fixed;
+                z-index: 9999;
+                top:0;
+                left:0;
+                right:0;
+                bottom:0;
+                background: #fff;
+            }
+    body.body-gray
+        #preloader
+        #wrapper
+            include include/header.pug
+            .container
+                .breadcrumbs
+                    ul.breadcrumbs-list.default-list
+                        li
+                            a(href="#").breadcrumbs-link Главная
+                        li
+                            a(href="#").breadcrumbs-link Каталог
+                        li
+                            a(href="#").breadcrumbs-link Инструменты
+                        li
+                            a(href="#").breadcrumbs-link Электроинструмент
+                        li
+                            a(href="#").breadcrumbs-link Дрели ударные
+                h1.container-title Дрели ударные
+                .container__inner
+                    .container-left
+                        .catalog-filter
+                            .catalog-filter__top
+                                span Найдено 6 товаров
+                            .catalog-filter__item
+                                .panel-default
+                                    .panel-heading
+                                        h4.panel-title
+                                            a(href="#collapseOne", data-toggle="collapse").panel-title__link Цена
+                                    #collapseOne.panel-collapse.collapse.in
+                                        .panel-body
+                                            .slider-range
+                                                input.slider-range__input(type="text")
+                                                .slider-range__bottom
+                                                    .slider-range__values
+                                                        input.slider-range__input-min.js-input-min
+                                                        input.slider-range__input-max.js-input-max
+                                                    .slider-range__btns
+                                                        button.slider-range__btn-orange применить
+                                                        button.slider-range__btn-white Сбросить
+
+                            .catalog-filter__item
+                                .panel-default
+                                    .panel-heading
+                                        h4.panel-title
+                                            a(href="#collapseTwo", data-toggle="collapse").panel-title__link Марка
+                                    #collapseTwo.panel-collapse.collapse.in
+                                        .panel-body
+                                            .checkbox-item
+                                                input#checkbox1.checkbox-input(type="checkbox")
+                                                label.checkbox-label.checkbox-label--uc(for="checkbox1") dexter
+                                            .checkbox-item
+                                                input#checkbox2.checkbox-input(type="checkbox")
+                                                label.checkbox-label.checkbox-label--uc(for="checkbox2") metabo
+                                            .checkbox-item
+                                                input#checkbox3.checkbox-input(type="checkbox")
+                                                label.checkbox-label.checkbox-label--uc(for="checkbox3") practyl
+                                            .checkbox-item
+                                                input#checkbox4.checkbox-input(type="checkbox")
+                                                label.checkbox-label.checkbox-label--uc(for="checkbox4") bosh
+                                            .checkbox-item
+                                                input#checkbox5.checkbox-input(type="checkbox")
+                                                label.checkbox-label.checkbox-label--uc(for="checkbox5") фиолент
+                            .catalog-filter__item
+                                .panel-default
+                                    .panel-heading
+                                        h4.panel-title
+                                            a(href="#collapseThree", data-toggle="collapse").panel-title__link Количество скоростей
+                                    #collapseThree.panel-collapse.collapse.in
+                                        .panel-body
+                                            .checkbox-item
+                                                input#checkbox6.checkbox-input(type="checkbox")
+                                                label.checkbox-label(for="checkbox6") 1
+                                            .checkbox-item
+                                                input#checkbox7.checkbox-input(type="checkbox")
+                                                label.checkbox-label(for="checkbox7") 2
+                                            .checkbox-item
+                                                input#checkbox8.checkbox-input(type="checkbox")
+                                                label.checkbox-label(for="checkbox8") 5
+                            .catalog-filter__item
+                                .panel-default
+                                    .panel-heading
+                                        h4.panel-title
+                                            a(href="#collapseFour", data-toggle="collapse").panel-title__link Тип патрона
+                                    #collapseFour.panel-collapse.collapse.in
+                                        .panel-body
+                                            .checkbox-item
+                                                input#checkbox9.checkbox-input(type="checkbox")
+                                                label.checkbox-label(for="checkbox9") Ключевой
+                                            .checkbox-item
+                                                input#checkbox10.checkbox-input(type="checkbox")
+                                                label.checkbox-label(for="checkbox10") Быстрозажимной
+                    .container-right
+                        ul.thing-list.default-list.thing-list--line
+                            li
+                                .thing-item
+                                    .thing-item__top
+                                        img(src="img/catalog/13085613.jpg").thing-item__img
+                                    .thing-item__center
+                                        .thing-item__title Дрель сетевая ударная 400 Вт
+                                        .thing-item__price
+                                            .thing-item__price-number
+                                                | 427
+                                                span ,00
+                                            span р.
+                                        button.thing-item__btn в корзину
+                                    .thing-item__bottom
+                                        .thing-item__property
+                                            .thing-item__property-left Артикул:
+                                            .thing-item__property-right 13805983
+                                        .thing-item__property
+                                            .thing-item__property-left Вес, кг:
+                                            .thing-item__property-right 1.58
+                                        .thing-item__property
+                                            .thing-item__property-left Страна-производитель:
+                                            .thing-item__property-right Китай
+                                        .thing-item__property
+                                            .thing-item__property-left Гарантия:
+                                            .thing-item__property-right 6 месяцев
+                            li
+                                .thing-item
+                                    .thing-item__top
+                                        img(src="img/catalog/13085613.jpg").thing-item__img
+                                    .thing-item__center
+                                        .thing-item__title Дрель сетевая ударная 400 Вт
+                                        .thing-item__price
+                                            .thing-item__price-number
+                                                | 2 181
+                                                span ,00
+                                            span р.
+                                        button.thing-item__btn в корзину
+                                    .thing-item__bottom
+                                        .thing-item__property
+                                            .thing-item__property-left Артикул:
+                                            .thing-item__property-right 13805983
+                                        .thing-item__property
+                                            .thing-item__property-left Вес, кг:
+                                            .thing-item__property-right 1.58
+                                        .thing-item__property
+                                            .thing-item__property-left Страна-производитель:
+                                            .thing-item__property-right Китай
+                                        .thing-item__property
+                                            .thing-item__property-left Гарантия:
+                                            .thing-item__property-right 6 месяцев
+                            li
+                                .thing-item
+                                    .thing-item__top
+                                        img(src="img/catalog/13085613.jpg").thing-item__img
+                                    .thing-item__center
+                                        .thing-item__title Дрель сетевая ударная 400 Вт
+                                        .thing-item__price
+                                            .thing-item__price-number
+                                                | 427
+                                                span ,00
+                                            span р.
+                                        button.thing-item__btn в корзину
+                                    .thing-item__bottom
+                                        .thing-item__property
+                                            .thing-item__property-left Артикул:
+                                            .thing-item__property-right 13805983
+                                        .thing-item__property
+                                            .thing-item__property-left Вес, кг:
+                                            .thing-item__property-right 1.58
+                                        .thing-item__property
+                                            .thing-item__property-left Страна-производитель:
+                                            .thing-item__property-right Китай
+                                        .thing-item__property
+                                            .thing-item__property-left Гарантия:
+                                            .thing-item__property-right 6 месяцев
+                            li
+                                .thing-item
+                                    .thing-item__top
+                                        img(src="img/catalog/13085613.jpg").thing-item__img
+                                    .thing-item__center
+                                        .thing-item__title Дрель сетевая ударная 400 Вт
+                                        .thing-item__price
+                                            .thing-item__price-number
+                                                | 427
+                                                span ,00
+                                            span р.
+                                        button.thing-item__btn в корзину
+                                    .thing-item__bottom
+                                        .thing-item__property
+                                            .thing-item__property-left Артикул:
+                                            .thing-item__property-right 13805983
+                                        .thing-item__property
+                                            .thing-item__property-left Вес, кг:
+                                            .thing-item__property-right 1.58
+                                        .thing-item__property
+                                            .thing-item__property-left Страна-производитель:
+                                            .thing-item__property-right Китай
+                                        .thing-item__property
+                                            .thing-item__property-left Гарантия:
+                                            .thing-item__property-right 6 месяцев
+            include include/footer.pug
+        script(src='js/vendor/jquery-3.1.0.min.js')
+        script(src='js/vendor/slick.min.js')
+        script(src='js/index.js')

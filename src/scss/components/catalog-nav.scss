@@ -1,0 +1,25 @@
+.catalog-nav{
+
+    li{
+        margin-bottom: 1px;
+    }
+}
+
+.catalog-nav__link{
+    display: block;
+    background-color: #fff;
+    padding-left: 25px;
+    font-size: 12px;
+    line-height: 45px;
+    font-weight: 700;
+    color: #000;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all linear .15s;
+
+    &.is-active,
+    &:hover{
+        background-color: $color-orange;
+        color: #fff;
+    }
+}
